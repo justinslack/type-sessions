@@ -2,6 +2,6 @@
 
 Download or for the repo
 
-Run ```npm install``` or ```yarn install``` (whiechever you prefer)
+Run ```npm install``` or ```yarn install``` (whichever you prefer)
 
 Runf ```grunt```
