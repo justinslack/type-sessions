@@ -1,0 +1,131 @@
+/* Type session styles */
+
+/* montserrat-300 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('/fonts/montserrat-v18-latin-300.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/montserrat-v18-latin-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* montserrat-italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/montserrat-v18-latin-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('/fonts/montserrat-v18-latin-600.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  /* Color */
+  --base-color:rgb(87, 87, 87);
+  --link-color:rgb(100,149,237);
+  --link-color-hover:rgb(12, 118, 160);
+
+  /* Font families. */
+  --font-family-base: "Montserrat", sans-serif;
+
+  /* Font sizes. */
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 3rem;
+
+  /* Font weights and styles */
+  --font-weight-thin: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-style-italic: italic;
+
+
+  /* Line heights. */
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.7;
+
+  /* Letter spacings. */
+  --letter-spacing-sm: 0.05em;
+  --letter-spacing-md: 0.1em;
+
+  /* Clamp */
+  /* --responsive-size: font-size: calc(12px + 0.9vw); */
+}
+
+
+@media (min-width: 56em) {
+  :root {
+      --font-size-xl: 1.5rem;
+      --font-size-2xl: 2rem;
+      --font-size-3xl: 2.5rem;
+      --font-size-4xl: 3rem;
+  }
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+.good-type {
+  line-height: var(--line-height-lg);
+  margin: 0 auto;
+  max-width: 70ch;
+}
+
+.good-type * + * {
+  margin-top: 1.5em;
+}
+
+.good-type > h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+}
+
+
+.good-type > h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-thin);
+}
+
+.good-type > p {
+  color: var(--base-color);
+  font-size: var(--font-size-lg);
+}
+
+.good-type a {
+  color: var(--link-color);
+}
+
+.good-type a:hover {
+  color: var(--link-color-hover);
+}
+
+
+
